@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesan Maaf untuk Naura</title>
+    <style>
+      body {
+        background: linear-gradient(to bottom right, #ffe6e6, #fff);
+        font-family: "Segoe UI", sans-serif;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      h1 {
+        color: #d6336c;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+
+      .hearts {
+        font-size: 30px;
+        animation: float 3s infinite ease-in-out;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .accordion-box {
+        width: 100%;
+        max-width: 600px;
+        background: #fff0f5;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 20px auto;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .accordion-header {
+        background-color: #ffb3c1;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .accordion-header:hover {
+        background-color: #ff8fa3;
+      }
+
+      .accordion-icon {
+        transition: transform 0.3s ease;
+      }
+
+      .accordion-box.active .accordion-icon {
+        transform: rotate(180deg);
+      }
+
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        background-color: #fff;
+        transition: max-height 0.5s ease;
+        padding: 0 20px;
+      }
+
+      .accordion-box.active .accordion-content {
+        max-height: 1000px;
+        padding: 20px;
+      }
+
+      .accordion-content p {
+        margin: 0 0 15px;
+        font-size: 16px;
+        color: #444;
+        line-height: 1.7;
+        text-align: center;
+      }
+
+      .accordion-content img {
+        width: 200px;
+        border-radius: 15px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        margin-bottom: 15px;
+      }
+
+      .btn-wa {
+        margin-top: 30px;
+        background-color: #d6336c;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        display: inline-block;
+      }
+
+      .btn-wa:hover {
+        background-color: #a61e4d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hearts">💖 💖 💖</div>
+    <h1>-FOR MY DEAR NAURA-</h1>
+
+    <!-- STEP 1 -->
+    <div class="accordion-box" id="step1">
+      <div class="accordion-header" onclick="toggleStep('step1', 'step2')">
+        🌸 Klik untuk Buka Petunjuk Pertama
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p>
+          Ada sesuatu yang penting ingin aku sampaikan sayang. Tapi kamu harus
+          membukanya perlahan yaa seperti hatimu yang indah hehehe 💌
+        </p>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="accordion-box" id="step2" style="display: none">
+      <div class="accordion-header" onclick="toggleStep('step2', 'step3')">
+        📦 Klik untuk Buka Petunjuk Kedua
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <img src="index.jpg" alt="Foto Naura 2" />
+        <p>
+          Setiap senyuman kamu itu berarti sayang buat aku dan aku ingin
+          mengembalikan senyuman itu dengan tulus dan jujur.
+        </p>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="accordion-box" id="step3" style="display: none">
+      <div class="accordion-header" onclick="toggleStep('step3', 'finalMsg')">
+        💌 Klik untuk Buka Pesan Terakhir
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <img src="index.png" alt="Foto Naura 3" />
+        <p>Hatiku selalu ada untuk kamu camtikk dan ini isi terdalamnyaaa...</p>
+      </div>
+    </div>
+
+    <!-- FINAL MESSAGE -->
+    <div class="accordion-box" id="finalMsg" style="display: none">
+      <div class="accordion-header" onclick="toggleFinal()">
+        ❤️ Klik untuk Buka Pesan Maaf
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p>
+          Maaf ya sayaangg... malam ini aku nda bisa nemenin kamu seperti
+          pasangan lain yang bisa jalan bareng, nonton, atau duduk berdua.<br /><br />
+          Aku tahu malam minggu kadang jadi waktu yang paling sepi buat kita
+          yang LDR ini.<br />
+          Tapi percayalah, meski aku jauh di sini, hatiku tetap dekat sama kamu
+          ko sayaangg.<br /><br />
+          Aku juga kangen, aku juga ingin bersamamu sayang, tapi saat ini,
+          izinkan aku berjuang dulu demi masa depan kita yaa.<br /><br />
+          Aku minta maaf kalau aku belum bisa hadir secara fisik malam ini. Tapi
+          cintaku... selalu ada untuk kamu ko sa sayang, setiap hari, setiap
+          malam. <br /><br />Thankyu sayang uda baca dari awal. Love U ❤️❤️❤️
+        </p>
+      </div>
+    </div>
+
+    <a class="btn-wa" href="https://wa.me/6285704067284" target="_blank"
+      >Hubungi Aku di WhatsApp</a
+    >
+
+    <script>
+      function toggleStep(currentId, nextId) {
+        const currentBox = document.getElementById(currentId);
+        currentBox.classList.toggle("active");
+        const nextBox = document.getElementById(nextId);
+        nextBox.style.display = "block";
+      }
+
+      function toggleFinal() {
+        const finalBox = document.getElementById("finalMsg");
+        finalBox.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
